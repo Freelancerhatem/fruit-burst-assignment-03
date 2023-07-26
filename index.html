@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 <!---------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google fonts -->
@@ -37,40 +38,27 @@
             font-family: 'Lato', sans-serif;
         }
     </style>
-    <title>Fruits</title>
+    <title>Fruit Burst</title>
   </head>
   <body>
     <header>
-      <section class="nav-bar container px-10 lg:px-20 lg:py-10">
-        <div class="navbar justify-between lg:bg-[#F85559] lg:text-white lg:rounded-full lg:px-8 lg:py-5">
+      <section class=" nav-bar container px-10 lg:px-20 lg:py-10">
+        <div class="navbar justify-between lg:bg-[#F85559]  lg:text-white lg:rounded-full lg:px-8 lg:py-5">
           <!-- small start -->
-          <div class="lg:hidden">
+          <div class="lg:hidden md:hidden ">
             <div class="flex items-center gap-2">
               <img class="w-8" src="./images/logo.png" alt="">
               <h1>Fruit Burst</h1>
             </div>
             <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost relative left-56  lg:hidden">
+              <label tabindex="0" class="btn btn-ghost relative left-20   lg:hidden">
                 <i class="fa-solid fa-bars"></i>
-                <!-- <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg> -->
+                
               
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 relative left-10 rounded-box w-52"
+                class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 relative left-2 rounded-box w-52"
               >
               <li><input
                 type="text"
@@ -78,10 +66,10 @@
                 class="input input-bordered w-48 rounded-full"
               />
               <a href=""><i class="fa-solid fa-magnifying-glass absolute text-black bottom-6 right-5 "></i></a></li>
-                <li><a> Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
+                <li><a href="#home"> Home</a></li>
+                <li><a href="#home">About Us</a></li>
+                <li><a href="#home">Shop</a></li>
+                <li><a href="#home">All Fruits</a></li>
               </ul>
             </div>
           </div>
@@ -114,7 +102,7 @@
       </section>
       
 <!------------------------- nabvar end----------------------------------->
-<section class="px-10 py-5  lg:px-20  relative">
+<section class="px-10 py-5  lg:px-20  relative" id="home">
    
     <div class="carousel w-full">
       <!-- 01 carousel -->
@@ -673,7 +661,7 @@
 
     </main>
 
-    <footer class="footer footer-center py-5 lg:p-10 bg-black text-base-content rounded">
+    <footer class="footer footer-center container px-12 py-5 lg:p-10 bg-black text-base-content rounded">
       <div class="grid grid-flow-col">
         <img src="./images/logo.png" alt="">
         <h1 class="font-extrabold text-2xl text-white">Fruit Burst</h1>
