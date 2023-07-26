@@ -14,7 +14,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- ------------- -->
+<!------------------------------------------------------------>
     <style>
         body{
             font-family: 'Lato', sans-serif;
@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <section class="nav-bar container lg:px-20 lg:py-12">
+      <section class="nav-bar container lg:px-20 lg:py-10">
         <div class="navbar justify-between bg-[#F85559] lg:text-white rounded-full lg:px-8 lg:py-5">
           <!-- small start -->
           <div class="">
@@ -64,7 +64,7 @@
               <li><a>Shop</a></li>
               <li><a>All Fruits</a></li>
             </ul>
-            <div class="navbar-center mx-auto ">
+            <div class="navbar-center mx-auto blocks ">
                 <img src="./images/logo.png" alt="">
                 <h2 class="ml-4 text-white text-4xl font-bold">Fruit Burst</h2>
               </div>
@@ -72,7 +72,7 @@
           
           
           <!--logo end  -->
-          <div class="form-control relative">
+          <div class="form-control relative lg:block hidden">
             <input
               type="text"
               placeholder="Search here"
@@ -83,6 +83,72 @@
           </div>
         </div>
       </section>
+      
+<!------------------------- nabvar end----------------------------------->
+<section class="px-5 py-5  lg:px-20 lg:py-5">
+   
+    <div class="carousel w-full">
+      <!-- 01 carousel -->
+        <div id="slide1" class="carousel-item relative w-full flex justify-center  ">
+          <img src="./images/banner1.png" class="w-full" />
+          
+          <div class="absolute text-center lg:top-10 lg:space-y-4 lg:mt-5">
+                <h1 class="lg:text-7xl text-base font-semibold text-white ">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-white lg:text-base text-[10px] ">We supply highly quality organic products</p>
+                <button class="btn  bg-[#F85559] text-white border-none hover:bg-white hover:text-[#F85559] w-20 h-3 lg:w-32 font-bold  text-[8px] lg:text-base lg:font-extrabold lg:min-h-[3rem] min-h-[2rem]">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none">❮</a> 
+            <a href="#slide2" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none ">❯</a>
+          </div>
+        </div> 
+ <!----------------- carousel 01 ------------------------->
+ <div id="slide2" class="carousel-item relative w-full flex justify-center ">
+    <img src="./images/banner2.png" class="w-full" />
+    
+    <div class="absolute text-center lg:top-10 lg:space-y-4 lg:mt-5">
+                <h1 class="lg:text-7xl text-base font-semibold text-white ">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-white lg:text-base text-[10px] ">We supply highly quality organic products</p>
+                <button class="btn  bg-[#F85559] text-white border-none hover:bg-white hover:text-[#F85559] w-20 h-3 lg:w-32 font-bold  text-[8px] lg:text-base lg:font-extrabold lg:min-h-[3rem] min-h-[2rem]">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none">❮</a> 
+            <a href="#slide3" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none ">❯</a>
+          </div>
+        </div> 
+ <!-- --------------02--------------------- -->
+ <div id="slide3" class="carousel-item relative w-full flex justify-center ">
+    <img src="./images/banner3.png" class="w-full" />
+    
+    <div class="absolute text-center lg:top-10 lg:space-y-4 lg:mt-5">
+                <h1 class="lg:text-7xl text-base font-semibold text-white ">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-white lg:text-base text-[10px] ">We supply highly quality organic products</p>
+                <button class="btn  bg-[#F85559] text-white border-none hover:bg-white hover:text-[#F85559] w-20 h-3 lg:w-32 font-bold  text-[8px] lg:text-base lg:font-extrabold lg:min-h-[3rem] min-h-[2rem]">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none">❮</a> 
+            <a href="#slide4" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none ">❯</a>
+          </div>
+        </div> 
+<!------------------- 03---------------- -->
+<div id="slide4" class="carousel-item relative w-full flex justify-center ">
+    <img src="./images/banner4.png" class="w-full" />
+    
+    <div class="absolute text-center lg:top-10 lg:space-y-4 lg:mt-5">
+                <h1 class="lg:text-7xl text-base font-semibold text-white ">Exotic tastes at your <br> doorstep</h1>
+                <p class="text-white lg:text-base text-[10px] ">We supply highly quality organic products</p>
+                <button class="btn  bg-[#F85559] text-white border-none hover:bg-white hover:text-[#F85559] w-20 h-3 lg:w-32 font-bold  text-[8px] lg:text-base lg:font-extrabold lg:min-h-[3rem] min-h-[2rem]">Shop Now</button>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none">❮</a> 
+            <a href="#slide1" class="btn btn-circle text-xs text-center rounded-full w-4 lg:w-12 lg:h-12 min-h-[1rem] h-4 lg:min-h-[3rem] bg-black lg:bg-white text-white lg:text-black leading-none lg:leading-4 border-none ">❯</a>
+          </div>
+        </div>
+      </div>
+
+</section>
+<!------------------------- carousel end----------------------------------->
+
     </header>
 
     <main></main>
