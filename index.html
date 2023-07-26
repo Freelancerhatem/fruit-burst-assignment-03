@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-------------------------- -->
+<!---------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<!------------------- tailwind css------------------ -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
@@ -15,6 +17,21 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 <!------------------------------------------------------------>
+<!-- tailwund custom config-->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        backgroundImage: {
+        'team-bg': "url('./images/banner1.png')",
+        'team-bg-color': "linear-gradient(to right bottom,rgba(43, 108, 176,0.5),(43, 108, 176,0.3)),url('./images/banner1.png')",
+        
+      },
+      },
+    },
+  },
+</script>
+<!-- tailwund custom config-->
     <style>
         body{
             font-family: 'Lato', sans-serif;
@@ -27,7 +44,7 @@
       <section class="nav-bar container lg:px-20 lg:py-10">
         <div class="navbar justify-between bg-[#F85559] lg:text-white rounded-full lg:px-8 lg:py-5">
           <!-- small start -->
-          <div class="">
+          <div >
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <svg
@@ -85,7 +102,7 @@
       </section>
       
 <!------------------------- nabvar end----------------------------------->
-<section class="px-5 py-5  lg:px-20 lg:py-5">
+<section class="px-5 py-5  lg:px-20  relative">
    
     <div class="carousel w-full">
       <!-- 01 carousel -->
@@ -146,13 +163,361 @@
         </div>
       </div>
 
+
+<!-------------------- lower part of header---------------->
+ <div class="bg-white shadow-lg px-5 py-5 hidden lg:block  lg:px-14 absolute -bottom-8 left-72 rounded-md">
+ <div class="flex justify-around gap-10">
+
+  <div class="flex flex-col  items-center">
+    <img  src="./images/fruit1.png" alt="">
+    <p class="">Delaware</p>
+  </div>
+
+  <div class="flex flex-col  items-center">
+    <img src="./images/fruit2.png" alt="">
+    <p class="">Orange</p>
+  </div>
+
+  <div class="flex flex-col  items-center">
+    <img src="./images/fruit3.png" alt="">
+    <p class="">Mango</p>
+  </div>
+
+  <div class="flex flex-col  items-center">
+    <img src="./images/fruit4.png" alt="">
+    <p class="">Strawberry</p>
+  </div>
+
+  <div class="flex flex-col  items-center">
+    <img src="./images/fruit5.png" alt="">
+    <p class="">Pomegranate</p>
+  </div>
+  
+ </div>
+  
+
+ </div>
 </section>
+
+
+
 <!------------------------- carousel end----------------------------------->
 
     </header>
 
-    <main></main>
+    <main>
+      <section class="container px-5 lg:px-20">
 
-    <footer></footer>
+      
+      <div class=" flex flex-col lg:flex-row text-center lg:text-left justify-between  lg:py-10 mt-5 lg:mt-20 ">
+        
+          <div class="space-y-4">
+            <h1 class="text-2xl  lg:text-5xl font-extrabold">Deal of the day</h1>
+            <p class="text-gray-400">Contrary to popular belief, is not simply random text. It has roots <br> in a piece of classical Latin literature from 45 BC, making it over <br> 2000 years old.</p>
+          </div>
+
+       
+<!------------------ countdown-------------- -->
+        <div class="mt-2 lg:mt-0 ">
+          <div class="grid grid-flow-col gap-5  auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-3xl lg:text-5xl">
+                <span style="--value:15;"></span>:
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-3xl lg:text-5xl">
+                <span style="--value:10;"></span>:
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-3xl lg:text-5xl">
+                <span style="--value:24;"></span>:
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-3xl lg:text-5xl">
+                <span style="--value:19;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+<!------------------ countdown end-------------- -->
+
+      </div>
+<!--------------------- countdown part end------------------->
+
+<!--------------------fruits card area start------------------->
+
+      <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-between items-center gap-3 px-5  my-10 ">
+<!-- first card 001 -->
+        <div>
+          <div class="card h-[387px] bg-base-100 shadow-xl border-gray-400 border-2">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="apples" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              
+              <p>Apples</p>
+              
+<!----------------------rating area -------------------------->
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked/>
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+              </div>
+<!---------------------------- end rating area-------------------- -->
+              <div class="card-actions">
+                <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" onclick="btn_1.showModal()" >Details</button>
+                 <!-- 01 pop up -->
+        <dialog id="btn_1" class="modal">
+          <form method="dialog" class="modal-box">
+        <div class="card  ">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit6.png" alt="Apple" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            
+            <p>Apples</p>
+            
+      <!---------------------- pop rating area -------------------------->
+            <div class="rating">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+            </div>
+      <!----------------------------pop end rating area-------------------- -->
+            <div class="card-actions">
+              <button class="btn bg-transparent border-[#F85559] border-2 text-[#F85559] hover:bg-[#F85559] hover:text-white" >Close</button>
+              <button class="btn bg-[#F85559] border-2 text-white hover:bg-transparent hover:text-[#F85559] hover:border-[#F85559] " >Buy Now</button>
+              
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </dialog>
+
+        <!-- 01 pop up end-->
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- second card -->
+<div>
+  <div class="card h-[387px] bg-base-100 shadow-xl border-gray-400 border-2">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit7.png" alt="Orange" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      
+      <p>Orange</p>
+      
+<!----------------------rating area 02-------------------------->
+      <div class="rating">
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]"  />
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]" checked/>
+        <input type="radio" name="rating-3" class="mask mask-star-2 bg-[#F85559]" />
+      </div>
+<!---------------------------- end rating area 02-------------------- -->
+      <div class="card-actions">
+        <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" onclick="btn_2.showModal()" >Details</button>
+         <!-- 03 pop up -->
+         <dialog id="btn_2" class="modal">
+          <form method="dialog" class="modal-box">
+        <div class="card  ">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit7.png" alt="Orange" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            
+            <p>Orange</p>
+            
+      <!---------------------- pop rating area -------------------------->
+            <div class="rating">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+            </div>
+      <!----------------------------pop end rating area-------------------- -->
+            <div class="card-actions">
+              <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" >Close</button>
+              <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" >Buy Now</button>
+              
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </dialog>
+
+        <!-- 03 pop up end-->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- second card end-->
+
+<!-- third card -->
+<div>
+  <div class="card h-[387px] bg-base-100 shadow-xl border-gray-400 border-2">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit8.png" alt="red dragon" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      
+      <p>Red Dragon</p>
+      
+<!----------------------rating area 03-------------------------->
+      <div class="rating">
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]"  />
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" checked/>
+        <input type="radio" name="rating-4" class="mask mask-star-2 bg-[#F85559]" />
+      </div>
+<!---------------------------- end rating area 03-------------------- -->
+      <div class="card-actions">
+        <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" onclick="btn_3.showModal()" >Details</button>
+
+        <!-- 03 pop up -->
+        <dialog id="btn_3" class="modal">
+          <form method="dialog" class="modal-box">
+        <div class="card  ">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit8.png" alt="red dragon" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            
+            <p>Red Dragon</p>
+            
+      <!---------------------- pop rating area -------------------------->
+            <div class="rating">
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+              <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+            </div>
+      <!----------------------------pop end rating area-------------------- -->
+            <div class="card-actions">
+              <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" >Close</button>
+              <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" >Buy Now</button>
+              
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </dialog>
+
+        <!-- 03 pop up end-->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- third card end -->
+<!-- fourt card  -->
+<div>
+  <div class="card h-[387px] bg-base-100 shadow-xl border-gray-400 border-2 ">
+    <figure class="px-10 pt-10">
+      <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title">12.90$ - 18.85$</h2>
+      
+      <p>Banana</p>
+      
+<!----------------------rating area -------------------------->
+      <div class="rating">
+        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+        <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+      </div>
+<!---------------------------- end rating area-------------------- -->
+      <div class="card-actions">
+        <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" onclick="btn_4.showModal()" >Details</button>
+        
+            
+            <!-- popup 4 -->
+            <dialog id="btn_4" class="modal">
+              <form method="dialog" class="modal-box">
+            <div class="card  ">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                
+                <p>Banana</p>
+                
+          <!---------------------- pop rating area -------------------------->
+                <div class="rating">
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" checked />
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                  <input type="radio" name="rating-5" class="mask mask-star-2 bg-[#F85559]" />
+                </div>
+          <!----------------------------pop end rating area-------------------- -->
+                <div class="card-actions">
+                  <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" >Close</button>
+                  <button class="btn bg-transparent border-none text-[#F85559] hover:bg-[#F85559] hover:text-white" >Buy Now</button>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </form>
+        </dialog>
+        <!-- popup 4 end-->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fourt card end -->
+      </div>
+      <div class="flex justify-center">
+        <button class="btn bg-[#F85559] border-2 text-white hover:bg-transparent hover:text-[#F85559] hover:border-[#F85559] ">Sell All</button>
+      </div>
+    </section>
+
+    <!-- meet the team section -->
+    <section class="container px-20">
+      <div class="bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.4)),url('./images/banner1.png')] bg-no-repeat bg-center bg-cover min-h-screen text-center">
+        <h1 class="text-7xl font-extrabold text-white">Meet the team section</h1>
+        <p class="text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        
+
+      </div>
+
+    </section>
+    <!-- meet the team section end-->
+
+    </main>
+
+    <footer>
+    </footer>
   </body>
 </html>
