@@ -42,12 +42,17 @@
   <body>
     <header>
       <section class="nav-bar container px-10 lg:px-20 lg:py-10">
-        <div class="navbar justify-between bg-[#F85559] lg:text-white rounded-full lg:px-8 lg:py-5">
+        <div class="navbar justify-between lg:bg-[#F85559] lg:text-white lg:rounded-full lg:px-8 lg:py-5">
           <!-- small start -->
-          <div >
+          <div class="">
+            <div class="flex items-center gap-2">
+              <img class="w-8" src="./images/logo.png" alt="">
+              <h1>Fruit Burst</h1>
+            </div>
             <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
+              <label tabindex="0" class="btn btn-ghost relative left-56  lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
                   fill="none"
@@ -60,12 +65,19 @@
                     stroke-width="2"
                     d="M4 6h16M4 12h8m-8 6h16"
                   />
-                </svg>
+                </svg> -->
+              
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 relative left-10 rounded-box w-52"
               >
+              <li><input
+                type="text"
+                placeholder="Search here"
+                class="input input-bordered w-48 rounded-full"
+              />
+              <a href=""><i class="fa-solid fa-magnifying-glass absolute text-black bottom-6 right-5 "></i></a></li>
                 <li><a> Home</a></li>
                 <li><a>About Us</a></li>
                 <li><a>Shop</a></li>
